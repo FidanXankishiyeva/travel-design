@@ -4,16 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  background-image: url('photo/mountain.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-}
+
 
 #home-page {
   width: 100%;
-  /* position: relative; */
-  /* padding: 32px 145px 378px 136px; */
+  background-image: url("photo/mountain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   padding-top: 300px;
   padding-bottom: 200px;
 }
@@ -119,13 +116,14 @@
   line-height: normal;
 }
 
+/* Services-page design  */
+
 #services-page {
   width: 100%;
   background: #fff;
 }
-.our-service{
+.our-service {
   padding: 100px 145px 113px 145px;
-
 }
 #services-page h1 {
   margin-bottom: 63px;
@@ -214,8 +212,237 @@
   font-weight: 400;
   line-height: normal;
 }
-.best-service{
+.best-service {
   background: none;
-  background-image:url('./photo/map.jpg');
-  
+  background-image: url("./photo/map.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#services-page .best-service ul li {
+  width: 23%;
+  padding: 43px 85px 22px 74px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: none;
+}
+
+#services-page .best-service ul li h5 {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#services-page .best-service ul li h6 {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#distinations-page {
+  width: 100%;
+  padding: 72px 0 43px 0;
+}
+
+#distinations-page h1 {
+  margin-bottom: 63px;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#distinations-page .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#distinations-page .flex-box ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+  list-style-type: none;
+}
+
+#distinations-page .flex-box ul li img {
+  width: 223px;
+  height: 223px;
+}
+
+#distinations-page .flex-box ul li .about-box {
+  padding: 83px 35px 86px 49px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-radius: 15px;
+background: #FFF;
+box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+#distinations-page .flex-box ul li .about-box h2 {
+  margin-left: 49px;
+  margin-right: 49px;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#distinations-page .flex-box ul li .about-box p {
+  margin-right: 93px;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* packages-page design  */
+
+#packages-page{
+  width: 100%;
+  padding: 59px 146px 105px 155px;
+  background: #ECF1F0;
+}
+
+#packages-page h1{
+  margin-bottom: 52px;
+  color: #000;
+text-align: center;
+font-family: Open Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#packages-page .button-box{
+  margin-bottom: 107px;
+}
+
+#packages-page .button-box ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#packages-page .button-box ul li{
+  list-style-type: none;
+}
+
+#packages-page .button-box ul li button{
+  width: 180px;
+height: 60px;
+border: none;
+  border-radius: 10px;
+background: #666;
+}
+
+#packages-page .button-box ul li:first-child button{
+  border-radius: 10px;
+background: #00A651;
+}
+
+#packages-page .button-box ul li button a{
+  text-decoration: none;
+  color: #FFF;
+text-align: center;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#packages-page .directions-box ul li{
+  list-style-type: none;
+}
+
+#packages-page .directions-box ul li 
+.city{
+  width: 434px;
+  padding: 10px 11px 17px 15px;
+border-radius: 0px 0px 15px 15px;
+background: #FFF;
+}
+
+#packages-page .directions-box ul li 
+.city .price-box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+#packages-page .directions-box ul li 
+.city .price-box h2,
+#packages-page .directions-box ul li 
+.city .price-box h3{
+  color: #000;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#packages-page .directions-box ul li 
+.city p{
+  margin-bottom: 35px;
+  color: rgba(0, 0, 0, 0.81);
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+#packages-page .directions-box ul li 
+.city .location-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#packages-page .directions-box ul li 
+.city .location-box .indonesia-location{
+  display: flex;
+  align-items: center;
+}
+
+#packages-page .directions-box ul li 
+.city .location-box .indonesia-location{
+  color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+#packages-page .directions-box ul li 
+.city .location-box a{
+  color: #000;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-decoration-line: underline;
 }
