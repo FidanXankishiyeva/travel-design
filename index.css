@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Laila:wght@700&family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@700&family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@500&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +23,7 @@
   margin-bottom: 381px;
   position: fixed;
   top: 0;
+  z-index: 1;
   background-color: black;
 }
 
@@ -371,7 +372,15 @@ font-weight: 700;
 line-height: normal;
 }
 
+#packages-page .directions-box ul{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 98px;
+}
+
 #packages-page .directions-box ul li{
+  width: 32%;
+  position: relative;
   list-style-type: none;
 }
 
@@ -379,6 +388,8 @@ line-height: normal;
 .city{
   width: 434px;
   padding: 10px 11px 17px 15px;
+  position: absolute;
+  top: 338px;
 border-radius: 0px 0px 15px 15px;
 background: #FFF;
 }
@@ -421,13 +432,13 @@ line-height: normal;
 }
 
 #packages-page .directions-box ul li 
-.city .location-box .indonesia-location{
+.city .location-box .city-location{
   display: flex;
   align-items: center;
 }
 
 #packages-page .directions-box ul li 
-.city .location-box .indonesia-location{
+.city .location-box .city-location{
   color: #000;
 font-family: Open Sans;
 font-size: 20px;
@@ -445,4 +456,228 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 text-decoration-line: underline;
+}
+
+#packages-page .directions-box button{
+  width: 300px;
+height: 70px;
+display: block;
+margin: auto;
+border-radius: 10px;
+border: none;
+background: #00A651;
+}
+
+#packages-page .directions-box button a{
+  text-decoration: none;
+  color: #FFF;
+text-align: center;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/* steps-page design  */
+#steps-page{
+  width: 100%;
+  padding: 62px 290px 92px 290px;
+}
+
+#steps-page h1{
+  color: #000;
+text-align: center;
+font-family: Open Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#steps-page h2{
+  margin-bottom: 128px;
+  color: #000;
+text-align: center;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#steps-page .general-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#steps-page .step ul li {
+  margin-bottom: 66px;
+  list-style-type: none;
+}
+
+#steps-page .step ul li .fleksboks{
+  display: flex;
+  align-items: center;
+}
+
+#steps-page .step ul li .box h3{
+  margin-bottom: 6px;
+  color: var(--TEXT-CLR, #5E6282);
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 124.5%;
+}
+
+#steps-page .step ul li .box{
+  margin-left: 29px;
+}
+
+#steps-page .step ul li .box p{
+  color: var(--TEXT-CLR, #5E6282);
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 124.5%;
+}
+
+#steps-page .post-1{
+  width: 370px;
+  padding: 20px 24px 31px 25px;
+  position: relative;
+  border-radius: 26px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+#steps-page .post-1 h4{
+  margin-top: 25px;
+  margin-bottom: 13px;
+  color: var(--black, #080809);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 124.5%; 
+letter-spacing: 0.27px;  
+}
+
+#steps-page .post-1 p{
+  margin-bottom: 21px;
+  color: var(--text-2, #84829A);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 124.5%; 
+letter-spacing: -0.08px;
+}
+
+#steps-page .post-1 p span{
+  margin-left: 13px;
+}
+
+#steps-page .post-1 .logo-box{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 29px;
+}
+
+#steps-page .post-1 .logo-box .logo-1 {
+  width: 36px;
+  height: 36px;
+  display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background-color: #F0F0F0;
+}
+
+#steps-page .post-1 .about{
+  display: flex;
+}
+
+#steps-page .post-1 .about h5{
+  margin-left: 15px;
+  margin-right: 143px;
+  color: var(--text-2, #84829A);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 124.5%; 
+letter-spacing: -0.32px;
+}
+
+#steps-page .post-2 {
+  width: 263px;
+padding: 16px 25px 22px 7px;
+position: absolute;
+bottom: 54px;
+left: 232px;
+border-radius: 18px;
+background: var(--white, #FFF);
+box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+#steps-page .post-2 .img-flex{
+  display: flex;
+  /* align-items: center; */
+}
+
+#steps-page .post-2 img{
+  width: 74px;
+height: 66px;
+margin-right: 10px;
+border-radius: 50%;
+}
+
+#steps-page .post-2 .text h6{
+  margin-bottom: 6px;
+  color: var(--text-2, #84829A);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 124.5%; 
+letter-spacing: -0.49px;
+}
+
+#steps-page .post-2 .text p{
+  color: var(--black, #080809);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 124.5%; 
+letter-spacing: -0.27px;
+}
+
+#steps-page .post-2 .downloading-box{
+  margin-left: 80px;
+  margin-top: 9px;
+}
+
+#steps-page .post-2 .downloading-box p{
+  color: var(--1, #8A79DF);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 124.5%; 
+letter-spacing: -0.77px;
+}
+
+#steps-page .post-2 .downloading-box p span{
+  color: var(--black, #080809);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 124.5%;
+letter-spacing: -0.77px;
 }
